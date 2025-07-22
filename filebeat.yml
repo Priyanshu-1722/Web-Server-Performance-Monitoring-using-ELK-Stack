@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/apache2/access.log
+
+output.logstash:
+  hosts: ["192.168.80.132:5044"]
